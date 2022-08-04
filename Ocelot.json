@@ -1,0 +1,59 @@
+{
+  "ReRoutes": [
+    {
+      "DownStreamPathTemplate": "/api/Passengers",
+      "DownStreamSchema": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44394
+        }
+      ],
+      "UpStreamPathTemplate": "/apigateway/PassengerManagement",
+      "UpStreamHttpMethod": [ "Get", "Put", "Post" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/Drivers",
+      "DownStreamSchema": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44318
+        }
+      ],
+      "UpStreamPathTemplate": "/apigateway/DriverManagement",
+      "UpStreamHttpMethod": [ "Get", "Put", "Post" ]
+    }
+  ]
+}
+
+/*{
+  "ReRoutes": [
+    {
+      "DownStreamPathTemplate": "/api/Passengers",
+      "DownStreamSchema": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44394
+        }
+      ],
+      "UpStreamPathTemplate": "/apigateway/DrivererManagement",
+      "UpStreamPathTemplate": [ "Get", "Post" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/Drivers",
+      "DownStreamSchema": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44318
+        }
+      ],
+      "UpStreamPathTemplate": "/apigateway/DrivererManagement",
+      "UpStreamPathTemplate": [ "Get", "Post" ]
+
+    }
+  ]
+
+}*/
